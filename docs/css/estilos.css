@@ -432,11 +432,11 @@
     }
     
     .timeline-icon {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #fff;
+      width: 120px;
+      height: 120px;
+      border-radius: 10%;
+      object-fit:scale-down;
+      border: 2px solid #fff;
       box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
       
     }

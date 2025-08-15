@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/vercel.css?v=1.1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <title>Katiane Soares | Desenvolvedora Full Stack</title>
+  </head>
+  <body>
+    <!-- Menu desktop -->
+    <div class="sidebar-container desktop-menu">
+      <nav id="sidebar">
+        <img src="img/ks.png" alt="Logo" />
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="desktop-link">Home</a></li>
+          <li><a href="experiencia.html" class="desktop-link">Experiência</a></li>
+          <li><a href="projetos.html" class="desktop-link">Projetos</a></li>
+          <li><a href="contato.html" class="desktop-link">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Conteúdo principal -->
+    <div class="content-wrapper">
+      <!-- CONTEUDO_PAGINA_AQUI -->
+    </div>
+    <!-- Menu mobile em tabs -->
+    <nav class="mobile-tab-menu">
+      <a href="index.html" class="tab-item vercel-tab-item">
+        <i class="fas fa-home vercel-icon"></i>
+        <span class="vercel-text">Home</span>
+      </a>
+      <a href="experiencia.html" class="tab-item vercel-tab-item">
+        <i class="fas fa-briefcase vercel-icon"></i>
+        <span class="vercel-text">Experiência</span>
+      </a>
+      <a href="projetos.html" class="tab-item vercel-tab-item">
+        <i class="fas fa-code vercel-icon"></i>
+        <span class="vercel-text">Projetos</span>
+      </a>
+      <a href="contato.html" class="tab-item vercel-tab-item">
+        <i class="fas fa-envelope vercel-icon"></i>
+        <span class="vercel-text">Contato</span>
+      </a>
+    </nav>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2025 Katiane Soares | Desenvolvedora Full Stack</p>
+        <div class="social-links">
+          <a href="https://github.com/Katianefatec" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/katiane-soares-4b8193245/" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      (function () {
+        function adjustMenus() {
+          const isMobile = window.innerWidth <= 768;
+          const desktopMenu = document.querySelector(".desktop-menu");
+          const mobileMenu = document.querySelector(".mobile-tab-menu");
+          if (desktopMenu && mobileMenu) {
+            desktopMenu.style.display = isMobile ? "none" : "block";
+            mobileMenu.style.display = isMobile ? "flex" : "none";
+            if (isMobile) {
+              mobileMenu.style.justifyContent = "space-around";
+              mobileMenu.style.alignItems = "center";
+            }
+          }
+        }
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", adjustMenus);
+        } else {
+          adjustMenus();
+        }
+        window.addEventListener("resize", adjustMenus);
+      })();
+    </script>
+  </body>
+</html>

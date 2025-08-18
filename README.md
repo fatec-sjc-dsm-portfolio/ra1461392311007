@@ -4,4 +4,4 @@ Este repositório contém meu portfólio profissional, exibindo minha experiênc
 
 Este portfólio está hospedado em:
 
-1. **GitHub Pages**: Acessível através do link [https://fatec-sjc-dsm-portfolio.github.io/ra1461392311007/]()
+1. **GitHub Pages**: Acessível através do link https://fatec-sjc-dsm-portfolio.github.io/ra1461392311007/

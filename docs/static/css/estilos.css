@@ -27,7 +27,7 @@
     p {
       margin-bottom: 20px;
       color: #4a4a4a;
-      font-size: 16px;
+      font-size: 0.95rem;
       line-height: 1.7;
     }
 
@@ -145,9 +145,84 @@
     }
         
     .hero-section {
-      padding: 120px 0 60px;
+      padding: 120px 0 20px;
       background-color: rgba(238, 242, 243, 0.5);
-      margin-bottom: 40px;
+      margin-bottom: 0;
+    }
+    
+    /* Hero section específica para páginas internas (experiência e projetos) */
+    .hero-section.internal-page {
+      padding: 80px 0 0;
+      margin-bottom: 0;
+      background-color: rgba(238, 242, 243, 0.5);
+    }
+    
+    .hero-section.internal-page .hero-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .hero-section.internal-page .profile-container {
+      padding: 50px 20px 30px;
+      margin: 0;
+      max-width: none;
+    }
+    
+    /* Conteúdo específico para páginas internas (sem foto) */
+    .hero-section.internal-page .internal-content {
+      padding: 20px 0 40px;
+      margin: 0;
+      max-width: none;
+      text-align: left;
+    }
+    
+    .hero-section.internal-page .internal-content h1 {
+      margin-bottom: 10px;
+    }
+    
+    .hero-section.internal-page .internal-content .subtitle {
+      margin-bottom: 15px;
+    }
+    
+    .hero-section.internal-page .internal-content .bio {
+      margin-bottom: 20px;
+    }
+    
+    /* Navegação próxima da introdução */
+    .hero-section.internal-page .nav-index {
+      margin-top: 0;
+      text-align: left;
+    }
+    
+    .hero-section.internal-page .nav-index ul {
+      padding-left: 0;
+      list-style: none;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    
+    .hero-section.internal-page .nav-index li {
+      margin: 0;
+    }
+    
+    .hero-section.internal-page .nav-index a {
+      color: #4a90e2;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      padding: 8px 16px;
+      border: 1px solid #4a90e2;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+    
+    .hero-section.internal-page .nav-index a:hover {
+      background-color: #4a90e2;
+      color: white;
     }
     
     .hero-content {
@@ -163,6 +238,17 @@
       gap: 40px;
     }
     
+    /* Layout centralizado para páginas sem imagem */
+    .profile-container.text-only {
+      justify-content: left;
+      text-align: left;
+    }
+    
+    .profile-container.text-only .profile-info {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
     .profile-image {
       width: 200px;
       height: 200px;
@@ -175,12 +261,29 @@
       filter: brightness(1.05) contrast(1.05);
     }
     
+    /* Estilo específico para imagens temáticas das páginas */
+    .hero-section .profile-image {
+      width: 180px;
+      height: 180px;
+      border-radius: 20px;
+      object-fit: cover;
+      object-position: center;
+      border: 3px solid rgba(74, 144, 226, 0.2);
+      box-shadow: 0 8px 25px rgba(74, 144, 226, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .hero-section .profile-image:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 35px rgba(74, 144, 226, 0.25);
+    }
+    
     .profile-info {
       flex: 1;
     }
     
     .profile-info h1 {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       margin-bottom: 10px;
       color: #2d3e50;
     }
@@ -201,7 +304,7 @@
     }
     
     .interests-content h2 {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       margin-bottom: 20px;
       color: #2d3e50;
     }
@@ -215,14 +318,14 @@
       margin-top: 40px;
     }
     .subtitle {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: 500;
       margin-bottom: 20px;
       color: #4a90e2;
     }
     
     .bio {
-      font-size: 1rem;
+      font-size: 0.95rem;
       line-height: 1.7;
       margin-bottom: 25px;
     }
@@ -255,7 +358,7 @@
     
     
     .about-section {
-      padding: 50px 0;
+      padding: 20px 0 50px;
       max-width: 1200px;
       margin: 0 auto 40px;
     }
@@ -269,7 +372,7 @@
     
     .about-content h2 {
       color: #2d3e50;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       margin-bottom: 20px;
       position: relative;
       padding-bottom: 15px;
@@ -298,7 +401,7 @@
     
     .skills-section h2 {
       color: #2d3e50;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       margin-bottom: 30px;
       position: relative;
       padding-bottom: 15px;
@@ -321,7 +424,7 @@
     }
     
     .skill-category h3 {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       margin-bottom: 15px;
       color: #4a90e2;
     }
@@ -335,17 +438,75 @@
     .skill-tag {
       background-color: #f0f5f9;
       color: #2d3e50;
-      padding: 8px 15px;
+      padding: 6px 12px;
       border-radius: 20px;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       font-weight: 500;
     }
     
     
-    .experience-container {
-      padding: 120px 20px 60px;
-      max-width: 1200px;
-      margin: 0 auto;
+    /* Agora todas as páginas usam about-section padronizado */
+    
+    
+    .projects-navigation {
+      text-align: center;
+      margin: 10px 0 30px;
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(74, 144, 226, 0.1);
+    }
+    
+    /* Removido: agora usa about-section padronizado */
+    
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      font-size: 0.95rem;
+    }
+    
+    .nav-link {
+      color: #4a90e2;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    
+    .nav-link:hover {
+      color: #2980b9;
+      background-color: rgba(74, 144, 226, 0.05);
+      text-decoration: none;
+    }
+    
+    .nav-link.active {
+      background-color: rgba(74, 144, 226, 0.1);
+      color: #2980b9;
+    }
+    
+    .nav-separator {
+      color: #bdc3c7;
+      font-size: 1.2rem;
+      user-select: none;
+    }
+    
+    
+    .section-description {
+      background: rgba(248, 251, 255, 0.5);
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    
+    .section-description p {
+      margin: 0;
+      color: #5a6c7d;
+      line-height: 1.6;
+      font-size: 0.95rem;
+      font-style: italic;
     }
     
     .experience-header {
@@ -354,13 +515,13 @@
     }
     
     .experience-header h1 {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       color: #2d3e50;
       margin-bottom: 15px;
     }
     
     .experience-subtitle {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: #6c757d;
       margin-bottom: 0;
     }
@@ -380,7 +541,7 @@
     }
     
     .timeline-heading {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       margin-bottom: 30px;
       color: #2d3e50;
       position: relative;
@@ -455,7 +616,7 @@
     }
     
     .timeline-content h3 {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       margin-bottom: 12px;
       color: #2d3e50;
       font-weight: 600;
@@ -463,7 +624,7 @@
     
     .timeline-description {
       color: #5a6c7d;
-      font-size: 1rem;
+      font-size: 0.95rem;
       line-height: 1.6;
       margin: 0;
     }
@@ -481,34 +642,98 @@
     }
     
     
+    .projetoAPI {
+      border: none;
+      background: linear-gradient(135deg, #f8fbff 0%, #ffffff 100%);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(74, 144, 226, 0.1);
+      margin-bottom: 40px;     
+      display: block;
+      text-align: left;
+      border-left: 4px solid #4a90e2;
+      position: relative;
+    }
+    
+    .projetoAPI::before {
+      content: "API";
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background: linear-gradient(135deg, #4a90e2, #2980b9);
+      color: white;
+      padding: 4px 8px;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(74, 144, 226, 0.3);
+    }
+    
+    .projetoAPI:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 35px rgba(74, 144, 226, 0.15);
+      background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+    }
+    
+    
     
     .projeto-title {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       color: #2d3e50;
-      margin-bottom: 5px;
+      margin-bottom: 8px;
       font-weight: 600;
+      line-height: 1.3;
     }
     
     .projeto-periodo {
       display: inline-block;
-      background-color: #e9f2fd;
+      background: linear-gradient(135deg, #e9f2fd, #f0f7ff);
       color: #4a90e2;
-      padding: 4px 12px;
-      border-radius: 20px;
+      padding: 6px 16px;
+      border-radius: 25px;
       font-size: 0.9rem;
       font-weight: 500;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
+      border: 1px solid #d6e9f7;
+      box-shadow: 0 2px 8px rgba(74, 144, 226, 0.15);
     }
     
     .projeto2 img {
       width: auto;
-      max-width: 600px;
+      max-width: 500px;
+      max-height: 300px;
       height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      margin: 25px auto;
       display: block;
-      
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      object-fit: contain;
+    }
+    
+    .projeto2 img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+    
+    .projetoAPI img {
+      width: auto;
+      max-width: 500px;
+      max-height: 300px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(74, 144, 226, 0.15);
+      margin: 25px auto;
+      display: block;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 2px solid rgba(74, 144, 226, 0.1);
+      object-fit: contain;
+    }
+    
+    .projetoAPI img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 35px rgba(74, 144, 226, 0.25);
+      border-color: rgba(74, 144, 226, 0.2);
     }
     
     
@@ -520,7 +745,7 @@
     }
     
     .projeto-tagline {
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: #555;
       line-height: 1.6;
       margin-bottom: 20px;
@@ -535,7 +760,7 @@
       display: inline-block;
       margin: 0 10px 0 0;
       color: #2d3e50;
-      font-size: 1rem;
+      font-size: 0.95rem;
     }
     
     .projeto-cliente p {
@@ -548,7 +773,7 @@
     .projeto-tecnologias h4 {
       margin-bottom: 10px;
       color: #2d3e50;
-      font-size: 1rem;
+      font-size: 0.95rem;
     }
     
     .tecnologias-tags {
@@ -560,16 +785,16 @@
     .tech-tag {
       background-color: #f0f5f9;
       color: #2d3e50;
-      padding: 6px 12px;
+      padding: 5px 10px;
       border-radius: 20px;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       font-weight: 500;
     }
     
     .projeto-detalhes h4 {
       margin: 25px 0 12px;
       color: #2d3e50;
-      font-size: 1rem;
+      font-size: 0.95rem;
     }
     
     .contribuicoes-lista {
@@ -590,7 +815,7 @@
     .competencias h4 {
       margin-bottom: 12px;
       color: #2d3e50;
-      font-size: 1rem;
+      font-size: 0.95rem;
     }
     
     .competencias-tags {
@@ -602,11 +827,13 @@
     .comp-tag {
       background-color: #e9f2fd;
       color: #4a90e2;
-      padding: 8px 15px;
+      padding: 6px 12px;
       border-radius: 20px;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       font-weight: 500;
     }
+
+
     
     
     .footer {
@@ -628,7 +855,7 @@
     
     .footer p {
       margin: 0;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       color: #ecf0f1;
       text-align: center;
     }
@@ -676,19 +903,17 @@
   margin-bottom: 50px;
 }
 
-.contato-header h1 {
-  font-size: 2.5rem;
-  color: #2d3e50;
-  margin-bottom: 15px;
-}
-
-.contato-subtitle {
-  font-size: 1.2rem;
-  color: #6c757d;
-  margin-bottom: 0;
-}
-
-.contato-grid {
+    .contato-header h1 {
+      font-size: 2.2rem;
+      color: #2d3e50;
+      margin-bottom: 15px;
+    }
+    
+    .contato-subtitle {
+      font-size: 1.1rem;
+      color: #6c757d;
+      margin-bottom: 0;
+    }.contato-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
@@ -789,13 +1014,11 @@
   font-size: 20px;
 }
 
-.contact-content h4 {
-  margin: 0 0 5px 0;
-  color: #2d3e50;
-  font-size: 1rem;
-}
-
-.contact-content p {
+    .contact-content h4 {
+      margin: 0 0 5px 0;
+      color: #2d3e50;
+      font-size: 0.95rem;
+    }.contact-content p {
   margin: 0;
   color: #6c757d;
 }
@@ -1102,18 +1325,16 @@
   backdrop-filter: blur(0.5px);
 }
 
-.journey-text-overlay p {
-  margin-bottom: 20px;
-  line-height: 1.7;  
-  font-size: 1.1rem;
-  font-weight: 500;
-}
-
-.journey-text-overlay strong {  
-  font-size: 1.2rem;
-}
-
-#form-status {
+    .journey-text-overlay p {
+      margin-bottom: 20px;
+      line-height: 1.7;  
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    
+    .journey-text-overlay strong {  
+      font-size: 1.1rem;
+    }#form-status {
   padding: 10px 15px;
   margin-top: 15px;
   border-radius: 4px;
@@ -1188,7 +1409,7 @@
   }
 
   .contato-header h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .container-contato {
@@ -1213,11 +1434,9 @@
     backdrop-filter: blur(0.5px);
   }
 
-  .journey-text-overlay p {
-    font-size: 1rem;
-  }
-
-  .about-intro {
+      .journey-text-overlay p {
+        font-size: 0.9rem;
+      }  .about-intro {
     flex-direction: column;
   }
 
@@ -1229,11 +1448,11 @@
 
 @media (max-width: 480px) {
   .contato-header h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   
   .contato-subtitle {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   
   .contato-info, .contato-form {
@@ -1264,7 +1483,7 @@
   }
   
   .footer p {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     text-align: center;
   }
 }
@@ -1307,6 +1526,41 @@
         text-align: center;
       }
       
+      .profile-container.text-only {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 15px;
+      }
+      
+      .hero-section.internal-page {
+        padding: 100px 0 15px;
+      }
+      
+      .hero-section.internal-page .profile-container {
+        padding: 25px 15px;
+      }
+      
+      .internal-page + .experience-container .projects-navigation {
+        margin: -5px 0 20px;
+        padding: 15px 0;
+      }
+      
+      /* Responsividade para internal-content */
+      .hero-section.internal-page .internal-content {
+        padding: 10px 0 20px;
+      }
+      
+      .hero-section.internal-page .nav-index ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+      
+      .hero-section.internal-page .nav-index a {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+        text-align: center;
+      }
+      
       .profile-image {
         margin-bottom: 20px;
         object-position:10% 15%;
@@ -1333,11 +1587,11 @@
       }
       
       .experience-header h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
       }
       
       .experience-subtitle {
-        font-size: 1rem;
+        font-size: 0.95rem;
       }
       
       .timeline-section {
@@ -1345,7 +1599,7 @@
       }
       
       .timeline-heading {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
       }
       
       .timeline-card {
@@ -1358,7 +1612,7 @@
       }
       
       .projeto-title {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
       }
       
       .tecnologias-tags, .competencias-tags {
@@ -1372,8 +1626,53 @@
       }
       
       
-      .projeto2 img {
-        max-width: 280px;
+      .projeto2 img,
+      .projetoAPI img {
+        max-width: 90%;
+        margin: 15px auto;
+      }
+      
+      .projeto2 img:hover,
+      .projetoAPI img:hover {
+        transform: none;
+      }
+      
+      .projetoAPI:hover {
+        transform: none;
+      }
+      
+      .projetoAPI::before {
+        top: 10px;
+        right: 15px;
+        font-size: 0.7rem;
+      }
+      
+      .projects-navigation {
+        margin: 10px 0 20px;
+        padding: 10px 0;
+      }
+      
+      .nav-links {
+        flex-direction: column;
+        gap: 15px;
+      }
+      
+      .nav-separator {
+        display: none;
+      }
+      
+      .nav-link {
+        font-size: 0.95rem;
+        padding: 10px 20px;
+      }
+      
+      .section-description {
+        padding: 15px;
+        margin-bottom: 20px;
+      }
+      
+      .section-description p {
+        font-size: 0.9rem;
       }
     }
     
@@ -1383,7 +1682,7 @@
       }
       
       h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
       }
       
       .profile-image {
@@ -1392,26 +1691,24 @@
         object-position:10% 15% !important;
       }
       
-      .social-btn {
-        padding: 8px 15px;
-        font-size: 0.9rem;
+      .hero-section .profile-image {
+        width: 140px;
+        height: 140px;
+        border-radius: 15px;
       }
       
-      
-      .experience-container {
-        padding: 100px 15px 60px;
-      }
-      
-      .experience-header h1 {
-        font-size: 1.8rem;
-      }
+    .social-btn {
+      padding: 8px 15px;
+      font-size: 0.85rem;
+    }      
+      /* Removido: agora usa about-section responsivo padrão */
       
       .timeline-section {
         padding: 20px 15px;
       }
       
       .timeline-heading {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
       }
       
       .timeline-card {
@@ -1425,26 +1722,36 @@
       
       .timeline-period {
         padding: 6px 12px;
-        font-size: 0.8rem;
+        font-size: 0.75rem;
       }
       
       .timeline-content h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
       }
       
       .timeline-description {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
       }
       
       
-      .projeto2 img {
-        max-width: 250px;
+      .projeto2 img,
+      .projetoAPI img {
+        max-width: 85%;
+        margin: 15px auto;
       }
       
       .projeto-title {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
       }
 
+    }
+    
+    @media (max-width: 1024px) {
+      .projeto2 img,
+      .projetoAPI img {
+        max-width: 400px;
+        margin: 20px auto;
+      }
     }
 
 @media (max-width: 768px) {

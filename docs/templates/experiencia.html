@@ -26,13 +26,36 @@
     </div>
     <div class="content-wrapper">
       
-      <div class="experience-container">
-        <div class="timeline">
-          <div class="timeline-section">
+      <div class="hero-section internal-page">
+        <div class="hero-content">
+          <div class="internal-content">
+            <h1>Minha Experiência</h1>
+            <h2 class="subtitle">Trajetória Acadêmica e Profissional</h2>
+            <div class="bio">
+              <p>Conheça minha jornada de formação e experiências que moldaram minha carreira, desde a fisioterapia até o desenvolvimento de software.</p>
+            </div>
+            <!-- Navegação Rápida -->
+            <div class="nav-index">
+              <ul>
+                <li><a href="#formacao-academica">Formação Acadêmica</a></li>
+                <li><a href="#experiencia-profissional">Experiência Profissional</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="about-section">
+        <div class="about-content">
+          <div class="timeline">
+          <div class="timeline-section" id="formacao-academica">
             <h2 class="timeline-heading">
               <i class="fas fa-graduation-cap"></i>
               Formação Acadêmica
             </h2>
+            <div class="section-description">
+              <p>Minha formação acadêmica reflete uma jornada de evolução contínua, desde a graduação em Fisioterapia até a especialização em resolução de conflitos e, atualmente, o foco em Desenvolvimento de Software Multiplataforma na FATEC.</p>
+            </div>
 
             <div class="timeline-card">
               <div class="timeline-card-header">
@@ -74,11 +97,14 @@
             </div>
           </div>
 
-          <div class="timeline-section">
+          <div class="timeline-section" id="experiencia-profissional">
             <h2 class="timeline-heading">
               <i class="fas fa-briefcase"></i>
               Experiência Profissional
             </h2>
+            <div class="section-description">
+              <p>Minha trajetória profissional no setor público me proporcionou experiência sólida em gestão de processos, atendimento especializado e trabalho em equipe, habilidades que agora aplico no desenvolvimento de software.</p>
+            </div>
 
             <div class="timeline-card">
               <div class="timeline-card-header">
@@ -120,6 +146,7 @@
             </div>
           </div>
         </div>
+        </div>
       </div>
       
     </div>
@@ -155,28 +182,7 @@
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-      (function () {
-        function adjustMenus() {
-          const isMobile = window.innerWidth <= 768;
-          const desktopMenu = document.querySelector(".desktop-menu");
-          const mobileMenu = document.querySelector(".mobile-tab-menu");
-          if (desktopMenu && mobileMenu) {
-            desktopMenu.style.display = isMobile ? "none" : "block";
-            mobileMenu.style.display = isMobile ? "flex" : "none";
-            if (isMobile) {
-              mobileMenu.style.justifyContent = "space-around";
-              mobileMenu.style.alignItems = "center";
-            }
-          }
-        }
-        if (document.readyState === "loading") {
-          document.addEventListener("DOMContentLoaded", adjustMenus);
-        } else {
-          adjustMenus();
-        }
-        window.addEventListener("resize", adjustMenus);
-      })();
-    </script>
+    <script src="../static/js/menu.js"></script>
+    <script src="../static/js/projects.js"></script>
   </body>
 </html>

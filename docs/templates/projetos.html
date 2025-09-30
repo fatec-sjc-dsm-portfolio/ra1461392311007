@@ -34,6 +34,7 @@
             <h2 class="subtitle">Portfólio de Desenvolvimento</h2>
             <div class="bio">
               <p>Conheça os principais projetos desenvolvidos durante minha trajetória acadêmica e profissional, que demonstram minha evolução técnica e criatividade.</p>
+             
             </div>
             <!-- Navegação Rápida -->
             <div class="nav-index">
@@ -41,22 +42,24 @@
                 <li><a href="#projetos-api">Projetos de API</a></li>
                 <li><a href="#outros-projetos">Outros Projetos</a></li>
               </ul>
+            
             </div>
           </div>
         </div>
       </div>
       
-      <div class="about-section">
+      <div class="about-section" id="projetos-api">
         <div class="about-content">
           <div class="timeline">
-          <div class="timeline-section" id="projetos-api">
+          <div class="timeline-section" >
             <h2 class="timeline-heading">
               <i class="fas fa-code-branch"></i>
               Projetos de API
             </h2>
             <div class="section-description">
               <p>Desenvolvidos em parceria com empresas reais durante o curso de DSM na FATEC. Estes projetos seguem metodologias ágeis (Scrum) e têm como objetivo solucionar problemas reais do mercado, aplicando conhecimentos técnicos em cenários práticos.</p>
-            </div>
+            
+            </div>  
 
             <div class="projetoAPI">    
               <div>
@@ -67,7 +70,10 @@
                   <img src="../static/img/COVID_proj.png" alt="Imagem Projeto API Covid Longa">
                 </a>      
                 <br>
-                <div class="projeto-description">
+                 <button class="btn btn-ver-detalhes" type="button" style="margin-bottom:8px; border-radius:20px; border:1px solid #007bff; background:#fff; color:#007bff; font-size:0.95em; padding:4px 16px; cursor:pointer;">
+                   <i class="fas fa-chevron-down"></i> Ver detalhes
+                 </button>
+                 <div class="projeto-description" style="display:none;">
                   <div class="projeto-overview">
                     <p class="projeto-tagline">Sistema de coleta e análise de dados relacionados à Covid Longa a partir do sistema Datasus (Tabnet).</p>
                     
@@ -113,20 +119,28 @@
                   </div>
                 </div>  
               </div>     
-            </div>
+           
+              <div class="d-flex justify-content-end" style="margin-top: 16px;">
+                <button type="button" class="btn btn-voltar-inicio">
+                  <i class="fas fa-arrow-up"></i> Voltar ao Início
+                </button>
+              </div>
+            </div>  
             
             <div class="projetoAPI">   
               <div>    
                 <h2 class="projeto-title">FocusQuest - Gerenciamento de Chamados</h2>
-                        <h4>Aprendizado pessoal:</h4>
-                        <p>Aprendi a importância de analisar dados de forma crítica, trabalhar em equipe e comunicar resultados de maneira clara para diferentes públicos.</p>
+                        
                 <span class="projeto-periodo">2º Semestre (02/2023)</span>
                 <br>       
                 <a href="https://github.com/FocusQuest/FocusQuestAPI.git" target="_blank">
                   <img src="../static/img/api-2sem.png" alt="Imagem API2">
                 </a>
                 <br>    
-                <div class="projeto-description">
+                  <button class="btn btn-ver-detalhes" type="button" style="margin-bottom:8px; border-radius:20px; border:1px solid #007bff; background:#fff; color:#007bff; font-size:0.95em; padding:4px 16px; cursor:pointer;">
+                    <i class="fas fa-chevron-down"></i> Ver detalhes
+                  </button>
+                  <div class="projeto-description" style="display:none;">
                   <div class="projeto-overview">
                     <p class="projeto-tagline">Aplicação para gerenciamento de chamados voltada para instituições de ensino superior, permitindo o controle e acompanhamento de solicitações.</p>
                     
@@ -177,20 +191,28 @@
                   </div>
                 </div>
               </div>
+           
+              <div class="d-flex justify-content-end" style="margin-top: 16px;">
+                <a href="#" class="btn btn-voltar-inicio">
+                  <i class="fas fa-arrow-up"></i> Voltar ao Início
+                </a>
+              </div>
             </div>
             
             <div class="projetoAPI">    
               <div>
                 <h2 class="projeto-title">CtrlA - Gestão de Ativos Empresariais</h2>
-                        <h4>Aprendizado pessoal:</h4>
-                        <p>Aprendi a lidar com desafios técnicos e a colaborar de forma eficiente com colegas, aprimorando minha comunicação e capacidade de adaptação em projetos ágeis.</p>
+                        
                 <span class="projeto-periodo">3º Semestre (01/2024)</span>   
                 <br> 
                 <a href="https://github.com/equipe-javali/API_3.git" target="_blank">
                   <img src="../static/img/ctrlA.png" alt="Imagem Projeto API CtrlA">
                 </a>      
                 <br>
-                <div class="projeto-description">
+                  <button class="btn btn-ver-detalhes" type="button" style="margin-bottom:8px; border-radius:20px; border:1px solid #007bff; background:#fff; color:#007bff; font-size:0.95em; padding:4px 16px; cursor:pointer;">
+                    <i class="fas fa-chevron-down"></i> Ver detalhes
+                  </button>
+                  <div class="projeto-description" style="display:none;">
                   <div class="projeto-overview">
                     <p class="projeto-tagline">Aplicação web para rastreamento e gerenciamento de ativos, incluindo histórico de manutenção e localização.</p>
                     
@@ -243,6 +265,12 @@
                   </div>
                 </div>  
               </div>  
+           
+              <div class="d-flex justify-content-end" style="margin-top: 16px;">
+                <a href="#" class="btn btn-voltar-inicio">
+                  <i class="fas fa-arrow-up"></i> Voltar ao Início
+                </a>
+              </div>
             </div>
 
             <div class="projetoAPI">    
@@ -254,7 +282,10 @@
                   <img src="../static/img/tecsus.png" alt="Imagem Projeto TecSus">
                 </a>      
                 <br>
-                <div class="projeto-description">
+                  <button class="btn btn-ver-detalhes" type="button" style="margin-bottom:8px; border-radius:20px; border:1px solid #007bff; background:#fff; color:#007bff; font-size:0.95em; padding:4px 16px; cursor:pointer;">
+                    <i class="fas fa-chevron-down"></i> Ver detalhes
+                  </button>
+                  <div class="projeto-description" style="display:none;">
                   <div class="projeto-overview">
                     <p class="projeto-tagline">Sistema para coleta e exibição de dados ambientais, com alertas para prevenção de desastres naturais.</p>
                     
@@ -305,6 +336,12 @@
                   </div>
                 </div>  
               </div>  
+           
+              <div class="d-flex justify-content-end" style="margin-top: 16px;">
+                <a href="#" class="btn btn-voltar-inicio">
+                  <i class="fas fa-arrow-up"></i> Voltar ao Início
+                </a>
+              </div>
             </div>
             
             <div class="projetoAPI">
@@ -316,7 +353,10 @@
                   <img src="../static/img/omni.jpg" alt="Imagem Projeto Omni">
                 </a>
                 <br>
-                <div class="projeto-description">
+                  <button class="btn btn-ver-detalhes" type="button" style="margin-bottom:8px; border-radius:20px; border:1px solid #007bff; background:#fff; color:#007bff; font-size:0.95em; padding:4px 16px; cursor:pointer;">
+                    <i class="fas fa-chevron-down"></i> Ver detalhes
+                  </button>
+                  <div class="projeto-description" style="display:none;">
                   <div class="projeto-overview">
                     <p class="projeto-tagline">Plataforma para criação e gerenciamento de agentes de Inteligência Artificial personalizados, com controle de acesso e integração com banco de dados na nuvem.</p>
             
@@ -359,15 +399,21 @@
                   </div>
                 </div>
               </div>
+           
+              <div class="d-flex justify-content-end" style="margin-top: 16px;">
+                <a href="#" class="btn btn-voltar-inicio">
+                  <i class="fas fa-arrow-up"></i> Voltar ao Início
+                </a>
+              </div>
             </div>
           </div>
         </div>
         </div>  
         
-        <div class="about-section">
+        <div class="about-section" id="outros-projetos">
         <div class="about-content">
           <div class="timeline">
-          <div class="timeline-section" id="projetos-api">
+          <div class="timeline-section" >
             
         <h2 class="timeline-heading">
             <i class="fas fa-lightbulb"></i>
@@ -376,6 +422,8 @@
           <div class="section-description">
             <p>Incluem trabalhos desenvolvidos nas disciplinas do curso, projetos pessoais de aprendizado e iniciativas próprias. Estes projetos demonstram a evolução das minhas habilidades técnicas e criatividade na solução de problemas diversos.</p>
           </div>
+          
+             
           
           <div class="projetoAPI">
             <div>
@@ -386,7 +434,10 @@
                 <img src="../static/img/desafio_proj.png" alt="Imagem Desafio Unes">
               </a>  
               <br>     
-              <div class="projeto-description">
+                  <button class="btn btn-ver-detalhes" type="button" style="margin-bottom:8px; border-radius:20px; border:1px solid #007bff; background:#fff; color:#007bff; font-size:0.95em; padding:4px 16px; cursor:pointer;">
+                    <i class="fas fa-chevron-down"></i> Ver detalhes
+                  </button>
+                  <div class="projeto-description" style="display:none;">
                 <div class="projeto-overview">
                   <p class="projeto-tagline">Site institucional para uma universidade fictícia, com interfaces de Home, Quem Somos, Contatos e Usuários.</p>
                   
@@ -421,12 +472,20 @@
                       <span class="comp-tag">Backend Básico</span>
                     </div>
                   </div>
-                </div>
-              </div>
+                </div>           
+            
             </div>
           </div>
+         
+              <div class="d-flex justify-content-end" style="margin-top: 16px;">
+                <a href="#" class="btn btn-voltar-inicio">
+                  <i class="fas fa-arrow-up"></i> Voltar ao Início
+                </a>
+              </div>
+            </div>
           
-          <div class="projetoAPI">  
+
+          <div class="projetoAPI">
             <div>   
               <h2 class="projeto-title">Portfólio Digital</h2>
               <span class="projeto-periodo">1º Semestre (01/2023)</span>
@@ -435,7 +494,10 @@
                 <img src="../static/img/portifolio.png" alt="Imagem Portfólio - Design Digital">
               </a>
               <br>
-              <div class="projeto-description">
+                  <button class="btn btn-ver-detalhes" type="button" style="margin-bottom:8px; border-radius:20px; border:1px solid #007bff; background:#fff; color:#007bff; font-size:0.95em; padding:4px 16px; cursor:pointer;">
+                    <i class="fas fa-chevron-down"></i> Ver detalhes
+                  </button>
+                  <div class="projeto-description" style="display:none;">
                 <div class="projeto-overview">
                   <p class="projeto-tagline">Site pessoal para apresentação de formação, experiência e projetos desenvolvidos durante a graduação.</p>
                   
@@ -471,10 +533,21 @@
                       <span class="comp-tag">Programação Web</span>
                     </div>
                   </div>
-                </div>
-              </div>      
-            </div>
-          </div>              
+                </div>               
+            </div>  
+               
+                  
+            
+           
+              <div class="d-flex justify-content-end" style="margin-top: 16px;">
+                <a href="#" class="btn btn-voltar-inicio">
+                  <i class="fas fa-arrow-up"></i> Voltar ao Início
+                </a>
+              </div>
+            </div> 
+          </div>   
+         
+                      
 
           <div class="projetoAPI">    
             <div>
@@ -485,7 +558,10 @@
                 <img src="../static/img/WB.png" alt="Imagem Projeto WB">
               </a>      
               <br>
-              <div class="projeto-description">
+                  <button class="btn btn-ver-detalhes" type="button" style="margin-bottom:8px; border-radius:20px; border:1px solid #007bff; background:#fff; color:#007bff; font-size:0.95em; padding:4px 16px; cursor:pointer;">
+                    <i class="fas fa-chevron-down"></i> Ver detalhes
+                  </button>
+                  <div class="projeto-description" style="display:none;">
                 <div class="projeto-overview">
                   <p class="projeto-tagline">Sistema para armazenamento e gerenciamento detalhado de informações de clientes, otimizando a comunicação e impulsionando as vendas.</p>
                   
@@ -522,21 +598,31 @@
                       <span class="comp-tag">Desenvolvimento Web</span>
                     </div>
                   </div>
-                </div>
-              </div>  
+                </div>               
             </div>  
-          </div>  
+              </div>
+             
+              <div class="d-flex justify-content-end" style="margin-top: 16px;">
+                <a href="#" class="btn btn-voltar-inicio">
+                  <i class="fas fa-arrow-up"></i> Voltar ao Início
+                </a>
+              </div>
+            </div>   
+                    
 
           <div class="projetoAPI">    
             <div>
               <h2 class="projeto-title">MindCare - Aplicativo de Bem-Estar Mental</h2>   
-              <span class="projeto-periodo">Projeto Pessoal (2024)</span>
+              <span class="projeto-periodo">4º semestre (02/2024)</span>
               <br> 
               <a href="https://github.com/Katianefatec/MindCare" target="_blank">
                 <img src="../static/img/mindcare.jpg" alt="Imagem Projeto MindCare">
               </a>      
               <br>
-              <div class="projeto-description">
+                  <button class="btn btn-ver-detalhes" type="button" style="margin-bottom:8px; border-radius:20px; border:1px solid #007bff; background:#fff; color:#007bff; font-size:0.95em; padding:4px 16px; cursor:pointer;">
+                    <i class="fas fa-chevron-down"></i> Ver detalhes
+                  </button>
+                  <div class="projeto-description" style="display:none;">
                 <div class="projeto-overview">
                   <p class="projeto-tagline">Aplicação mobile para acompanhamento da saúde mental, proporcionando ferramentas para o monitoramento emocional e bem-estar.</p>
                   
@@ -573,9 +659,17 @@
                     </div>
                   </div>
                 </div>
-              </div>  
+                </div>  
+               
+              <div class="d-flex justify-content-end" style="margin-top: 16px;">
+                <a href="#" class="btn btn-voltar-inicio">
+                  <i class="fas fa-arrow-up"></i> Voltar ao Início
+                </a>
+              </div>
             </div>  
-          </div> 
+              </div>  
+             
+          
 
           <div class="projetoAPI">    
             <div>
@@ -586,7 +680,10 @@
                 <img src="../static/img/buscaAns.jpg" alt="Imagem Projeto API Operadoras ANS">
               </a>      
               <br>
-              <div class="projeto-description">
+                  <button class="btn btn-ver-detalhes" type="button" style="margin-bottom:8px; border-radius:20px; border:1px solid #007bff; background:#fff; color:#007bff; font-size:0.95em; padding:4px 16px; cursor:pointer;">
+                    <i class="fas fa-chevron-down"></i> Ver detalhes
+                  </button>
+                  <div class="projeto-description" style="display:none;">
                 <div class="projeto-overview">
                   <p class="projeto-tagline">Aplicação para listar e buscar operadoras de saúde com base em dados fornecidos pela ANS.</p>
                   
@@ -624,9 +721,17 @@
                     </div>
                   </div>
                 </div>
-              </div>             
+                  </div>
+               
+              <div class="d-flex justify-content-end" style="margin-top: 16px;">
+                <a href="#" class="btn btn-voltar-inicio">
+                  <i class="fas fa-arrow-up"></i> Voltar ao Início
+                </a>
+              </div>
             </div>  
-          </div> 
+              </div>             
+            
+          
                       <div class="projetoAPI">    
               <div>
                 <h2 class="projeto-title">Mecanismo para Coleta de Dados e Análise de Desempenhode Modelos de PLN</h2>
@@ -637,7 +742,10 @@
                   <img src="..\static\img\chatbot_interface.png" alt="Imagem Projeto LLM Evaluation Interface">
                   <span class="repo-privado" style="display:block; margin-top:8px; color:#888; font-size:0.95em; font-style:italic;">Repositório privado</span>
                 <br>
-                <div class="projeto-description">
+                    <button class="btn btn-ver-detalhes" type="button" style="margin-bottom:8px; border-radius:20px; border:1px solid #007bff; background:#fff; color:#007bff; font-size:0.95em; padding:4px 16px; cursor:pointer;">
+                      <i class="fas fa-chevron-down"></i> Ver detalhes
+                    </button>
+                    <div class="projeto-description" style="display:none;">
                   <div class="projeto-overview">
                     <p style="margin-bottom:8px; color:#444; font-size:1em;"><strong> Projeto desenvolvido em parceria com o programa Queimadas, BiomasBR e o Laboratório de Inteligência Artificial para Aplicações AeroEspaciais e Ambientais (LIAREA) no INPE.</strong></p>
                     <p class="projeto-tagline">Plataforma web para avaliação e comparação de modelos de linguagem natural (LLM), voltada à classificação de dados ambientais e aeroespaciais. O sistema integra backend em Flask e frontend em Node.js/Express, permitindo a geração, análise e exportação de dados, além de facilitar a validação colaborativa de resultados por especialistas.</p>
@@ -680,11 +788,21 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                    </div>
+                 
+              <div class="d-flex justify-content-end" style="margin-top: 16px;">
+                <a href="#" class="btn btn-voltar-inicio">
+                  <i class="fas fa-arrow-up"></i> Voltar ao Início
+                </a>
+              </div>
+            </div>  
+                
               </div>
             </div>
         </div>
         </div>
+      </div>
+      </div>
       </div>
       </div>
       

@@ -521,6 +521,16 @@
       font-size: 0.85rem;
       font-weight: 500;
     }
+
+    .btn-voltar-inicio {
+      background-color: #f0f5f9;
+      color: #2d3e50;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+
+    }
     
     
     /* Agora todas as páginas usam about-section padronizado */

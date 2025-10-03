@@ -21,107 +21,110 @@
           <li><a href="index.html" class="desktop-link">Home</a></li>
           <li><a href="experiencia.html" class="desktop-link">Experiência</a></li>
           <li><a href="projetos.html" class="desktop-link">Projetos</a></li>
-          <li><a href="#footer" class="desktop-link">Contato</a></li>
+          <li><a href="contato.html" class="desktop-link active">Contato</a></li>
         </ul>
       </nav>
     </div>
     <div class="content-wrapper">
-      <div class="container-contato">
-        <div class="contato-grid">
+      <!-- Hero Section -->
+      <div class="contact-hero">
+        <div class="contact-hero-content">
+          <h1 class="contact-hero-title">
+            <i class="fas fa-paper-plane"></i> Vamos Conversar?
+          </h1>
+          <p class="contact-hero-subtitle">
+            Estou sempre aberta a novas oportunidades e colaborações. Entre em contato!
+          </p>
+        </div>
+      </div>
+
+      <!-- Contact Cards Section -->
+      <div class="contact-container">
+        <div class="contact-cards-grid">
           
-          <div class="contato-info">
-            <h3><i class="fas fa-address-card"></i> Informações de Contato</h3>
-            
-            <div class="contact-cards">
-              <div class="contact-card">
-                <div class="contact-icon">
-                  <i class="fas fa-envelope"></i>
-                </div>
-                <div class="contact-content">
-                  <h4>Email</h4>
-                  <a href="mailto:katy_ane@yahoo.com.br">katy_ane@yahoo.com.br</a>
-                </div>
-              </div>
-
-              <div class="contact-card whatsapp-card">
-                <div class="contact-icon whatsapp">
-                  <i class="fab fa-whatsapp"></i>
-                </div>
-                <div class="contact-content">
-                  <h4>WhatsApp</h4>
-                  <a href="https://wa.me/5511995357525?text=Olá! Vi seu portfólio e gostaria de conversar sobre oportunidades." target="_blank">
-                    <i class="fab fa-whatsapp"></i> Conversar agora
-                  </a>
-                </div>
-              </div>
-
-              <div class="contact-card">
-                <div class="contact-icon">
-                  <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <div class="contact-content">
-                  <h4>Localização</h4>
-                  <p>São José dos Campos - SP</p>
-                </div>
-              </div>
+          <!-- Email Card -->
+          <div class="contact-card-modern">
+            <div class="contact-card-icon email-icon">
+              <i class="fas fa-envelope"></i>
             </div>
-
-            <div class="social-links-contato">
-              <h4><i class="fas fa-share-alt"></i> Redes Sociais</h4>
-              <div class="social-buttons">
-                <a
-                  href="https://github.com/Katianefatec"
-                  target="_blank"
-                  class="social-btn github"
-                >
-                  <i class="fab fa-github"></i> GitHub
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/katiane-soares-4b8193245/"
-                  target="_blank"
-                  class="social-btn linkedin"
-                >
-                  <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-              </div>
-            </div>
+            <h3 class="contact-card-title">Email</h3>
+            <p class="contact-card-description">Prefere escrever? Me envie um email</p>
+            <a href="mailto:katy_ane@yahoo.com.br" class="contact-card-link">
+              katy_ane@yahoo.com.br
+              <i class="fas fa-arrow-right"></i>
+            </a>
           </div>
 
-          
-          <div class="contato-form">
-            <h3><i class="fas fa-paper-plane"></i> Envie-me uma mensagem</h3>
-            <p class="form-description">Vamos conversar sobre projetos e oportunidades!</p>
-            
-            
-            <form id="formulario-contato" action="https://formspree.io/f/mblkbkbe" method="POST">
-              <div class="form-group">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="name" required />
-              </div>
+          <!-- WhatsApp Card -->
+          <div class="contact-card-modern whatsapp-highlight">
+            <div class="contact-card-icon whatsapp-icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <h3 class="contact-card-title">WhatsApp</h3>
+            <p class="contact-card-description">Resposta rápida e direta</p>
+            <a href="https://wa.me/5511995357525?text=Olá! Vi seu portfólio e gostaria de conversar sobre oportunidades." target="_blank" class="contact-card-link whatsapp-link">
+              <i class="fab fa-whatsapp"></i> Iniciar conversa
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
 
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="_replyto" required />
-              </div>
+          <!-- Location Card -->
+          <div class="contact-card-modern">
+            <div class="contact-card-icon location-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3 class="contact-card-title">Localização</h3>
+            <p class="contact-card-description">Onde você pode me encontrar</p>
+            <p class="contact-card-info">
+              <i class="fas fa-map-pin"></i> São José dos Campos - SP
+            </p>
+          </div>
 
-              <div class="form-group">
-                <label for="assunto">Assunto</label>
-                <input type="text" id="assunto" name="_subject" placeholder="Contato do Portfólio" required />
-              </div>
+        </div>
 
-              <div class="form-group">
-                <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" name="message" rows="5" required></textarea>
+        <!-- Social Media Section -->
+        <div class="contact-social-section">
+          <h2 class="contact-social-title">
+            <i class="fas fa-share-nodes"></i> Conecte-se Comigo
+          </h2>
+          <div class="contact-social-grid">
+            <a href="https://github.com/Katianefatec" target="_blank" class="contact-social-card github-card">
+              <div class="social-card-icon">
+                <i class="fab fa-github"></i>
               </div>
-              
-              
-              <input type="hidden" name="_next" value="https://katianefatec.github.io/portfolio2025/index.html" />
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_autoresponse" value="Obrigada pelo contato! Recebemos sua mensagem e retornaremos em breve." />
+              <div class="social-card-content">
+                <h4>GitHub</h4>
+                <p>Confira meus projetos e contribuições</p>
+              </div>
+              <i class="fas fa-external-link-alt social-card-arrow"></i>
+            </a>
 
-              <button type="submit" class="btn-enviar">Enviar Mensagem</button>
-            </form>
-            <div id="form-status" class="hidden"></div>
+            <a href="https://www.linkedin.com/in/katiane-soares-4b8193245/" target="_blank" class="contact-social-card linkedin-card">
+              <div class="social-card-icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <div class="social-card-content">
+                <h4>LinkedIn</h4>
+                <p>Vamos conectar profissionalmente</p>
+              </div>
+              <i class="fas fa-external-link-alt social-card-arrow"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="contact-cta">
+          <div class="contact-cta-content">
+            <h3>Pronto para iniciar um projeto?</h3>
+            <p>Estou disponível para freelance, projetos colaborativos ou oportunidades de emprego.</p>
+            <div class="contact-cta-buttons">
+              <a href="https://wa.me/5511995357525?text=Olá! Vi seu portfólio e gostaria de conversar sobre oportunidades." target="_blank" class="btn-cta-primary">
+                <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+              </a>
+              <a href="mailto:katy_ane@yahoo.com.br" class="btn-cta-secondary">
+                <i class="fas fa-envelope"></i> Enviar Email
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -139,7 +142,7 @@
         <i class="fas fa-code vercel-icon"></i>
         <span class="vercel-text">Projetos</span>
       </a>
-  <a href="#footer" class="tab-item vercel-tab-item">
+      <a href="contato.html" class="tab-item vercel-tab-item active">
         <i class="fas fa-envelope vercel-icon"></i>
         <span class="vercel-text">Contato</span>
       </a>
